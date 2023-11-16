@@ -8,8 +8,8 @@ const roboto = Roboto({
 });
 
 export const metadata = {
-    title: "Paises",
-    description: "Mi pagina de paises",
+    title: "Descubre el Mundo: Exploración de Países por Continentes y Búsqueda",
+    description: "Sumérgete en un viaje global explorando países a través de nuestro filtro por continentes y función de búsqueda. Desde la diversidad geográfica hasta las riquezas culturales, encuentra información detallada sobre cada rincón del mundo en nuestra página de países. ¡Embárcate en una experiencia única de descubrimiento y aprendizaje!",
 };
 
 export default function RootLayout({ children }) {
