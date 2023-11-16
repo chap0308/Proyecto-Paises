@@ -1,15 +1,11 @@
 "use client";
 import {
-    Card,
     Typography,
     List,
-    Collapse,
-    Navbar,
-    IconButton,
 } from "@material-tailwind/react";
 import Link from "next/link";
 import { MagicMotion } from "react-magic-motion";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 
 export default function Sidebar() {
@@ -17,22 +13,19 @@ export default function Sidebar() {
     
     return (
         <>
-            
             <MagicMotion>
-                <Card
+                <div
                     style={{
                         width: isCollapsed ? "3rem" : "20rem",
-                        height: isCollapsed ? "6vh" : "100vh",
                     }}
-                    color="gray"
-                    className="md:h-screen w-full max-w-[18rem] hidden rounded-none p-4 shadow-xl lg:block shadow-blue-gray-900/5"
+                    className="md:h-screen hidden rounded-none bg-gray-700 p-4 shadow-xl lg:block"
                 >
                     <div
                         style={{
                             display: "flex",
                             gap: "0.5rem",
                             alignItems: "center",
-                            justifyContent: "space-between",
+                            justifyContent: "flex-end",
                         }}
                     >
                         <button
@@ -113,7 +106,7 @@ export default function Sidebar() {
                             </Link>
                         )}
                     </List>
-                </Card>
+                </div>
             </MagicMotion>
         </>
     );
