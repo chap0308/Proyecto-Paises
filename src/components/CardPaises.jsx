@@ -25,7 +25,7 @@ const CardPaises = ({ toggleOpen, id, isSelected, pais, index}) => {
                         className="w-[200px] h-[150px] object-cover"
                     />
                 </CardHeader>
-                <CardBody  onClick={() => toggleOpen(id, index)} className={`flex flex-row max-h-[100px] py-3 ${isSelected ? "bg-blue-700" : "bg-white"}`}>
+                <CardBody  onClick={() => toggleOpen(id, index)} className={`flex flex-row hover:cursor-pointer max-h-[100px] py-3 ${isSelected ? "bg-blue-700" : "bg-white"}`}>
                     <Image
                         src={`https://flagsapi.com/${pais.code}/flat/64.png`}
                         alt="bandera"
