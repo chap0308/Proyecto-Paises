@@ -110,7 +110,7 @@ export default function Home() {
                 </div>
             </form>
             <div>
-                <div className={`grid gap-8 md:grid-cols-3 justify-center md:justify-stretch md:mx-14 my-12`}>
+                <div className={`grid gap-8 laptop:grid-cols-2 desktop:grid-cols-3 justify-center laptop:justify-stretch laptop:mx-14 my-12`}>
                     {paisesCard?.map((pais, index) => (
                         <CardPaises
                             key={pais.code}
@@ -127,6 +127,7 @@ export default function Home() {
                                 display: "none",
                             }
                         }
+                        
                     >
                         <CardDetalles open={open} idSeleccionado={idSeleccionado} />
                     </div>

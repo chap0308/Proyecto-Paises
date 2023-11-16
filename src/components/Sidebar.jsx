@@ -10,7 +10,7 @@ export default function Sidebar() {
             <MagicMotion>
                 <Card
                     color="gray"
-                    className="md:h-screen w-full max-w-[20rem] hidden rounded-none p-4 shadow-xl lg:block shadow-blue-gray-900/5"
+                    className="md:h-screen w-full max-w-[18rem] hidden rounded-none p-4 shadow-xl lg:block shadow-blue-gray-900/5"
                 >
 
                     <div className="mb-2 p-4 ">
