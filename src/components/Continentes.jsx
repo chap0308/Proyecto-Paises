@@ -100,7 +100,7 @@ const Continentes = ({totalPaises, setPaisesCard}) => {
                     required
                 />
             </MenuHandler>
-            <MenuList className="w-[36rem] mt-4">
+            <MenuList className=" w-[25rem] mx-auto md:mx-0 md:w-[36rem] mt-4">
                 <div className="flex justify-between">
                     <Typography variant="h5" color="gray" textGradient>
                         Filtrar por continentes
@@ -113,7 +113,7 @@ const Continentes = ({totalPaises, setPaisesCard}) => {
                     </button>
                 </div>
 
-                <div className="grid md:grid-cols-3 py-4">
+                <div className="grid grid-cols-2 md:grid-cols-3 py-4">
                     {continentes.map((continente) => (
                         <MenuItem
                             key={continente.id}
