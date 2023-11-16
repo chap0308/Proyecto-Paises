@@ -1,6 +1,7 @@
 import { Roboto } from "next/font/google";
 import Sidebar from "@/components/Sidebar";
 import "./globals.css";
+import { NavList } from "@/components/NavList";
 
 const roboto = Roboto({
     subsets: ["latin"],
@@ -17,7 +18,10 @@ export default function RootLayout({ children }) {
         <html lang="es">
             <body className={roboto.className+" flex bg-blue-gray-100"}>
                 <Sidebar />
-                <main className="w-full">{children}</main>
+                <main className="w-full ">
+                <NavList />
+                    {children}
+                </main>
             </body>
         </html>
     );
